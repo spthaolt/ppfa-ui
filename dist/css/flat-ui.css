@@ -3,7 +3,7 @@
  * Copyright 2013-2014 Designmodo, Inc.
  */
 
-@font-face {
+/*@font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
@@ -50,7 +50,7 @@
 
   src: url('../fonts/lato/lato-regular.eot');
   src: url('../fonts/lato/lato-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular.woff') format('woff'), url('../fonts/lato/lato-regular.ttf') format('truetype'), url('../fonts/lato/lato-regular.svg#latoregular') format('svg');
-  }
+  }*/
 @font-face {
   font-family: 'Flat-UI-Icons';
 

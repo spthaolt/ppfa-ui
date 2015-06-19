@@ -1,0 +1,148 @@
+
+
+.ppfa-cta {
+	display: inline-block;
+	height: 32px;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 15px;
+	cursor: pointer;
+}
+.ppfa-cta:hover {
+	color: rgba(0,0,0,0.33);
+}
+.ppfa-cta:focus {
+	color: #fff;
+}
+.ppfa-cta:active {
+	color: #fff;
+	transition: all 0.25s ease-in;
+	position: relative;
+	top: 1px;
+}
+
+
+/* --- Primary CTA --- */
+.ppfa-cta-primary {
+	background-color: #4db3d0;
+	border-top: 4px solid #358cb3;
+	padding-top: 1px;
+}
+.ppfa-cta-primary:hover {
+	background-color: #4db3d0;
+	border-top: 4px solid #4db3d0;
+	border-bottom: 4px solid #358cb3;
+	padding-bottom: 1px;
+}
+.ppfa-cta-primary:active {
+	background-color: #367d91;
+	border-top: 4px solid #367d91;
+	border-bottom: 4px solid #25627d;
+}
+
+/* --- Neutral CTA --- */
+.ppfa-cta-neutral {
+	background-color: #999;
+	border-top: 4px solid #6b6b6b;
+	padding-top: 1px;
+}
+.ppfa-cta-neutral:hover {
+	background-color: #999;
+	border-top: 4px solid #999;
+	border-bottom: 4px solid #6b6b6b;
+	padding-bottom: 1px;
+}
+.ppfa-cta-neutral:active {
+	background-color: #6b6b6b;
+	border-top: 4px solid #6b6b6b;
+	border-bottom: 4px solid #333;
+}
+
+/* --- Warning CTA --- */
+.ppfa-cta-warning {
+	background-color: #d62222;
+	border-top: 4px solid #ab0a0a;
+	padding-top: 1px;
+}
+.ppfa-cta-warning:hover {
+	background-color: #d62222;
+	border-top: 4px solid #d62222;
+	border-bottom: 4px solid #ab0a0a;
+	padding-bottom: 1px;
+}
+.ppfa-cta-warning:active {
+	background-color: #ab0a0a;
+	border-top: 4px solid #ab0a0a;
+	border-bottom: 4px solid #951818;
+}
+
+/* --- Text Inputs --- */
+.ppfa-text-input {
+	height: 32px;
+	border: 1px solid #d2cccc;
+	border-radius: 0;
+	padding: 0 10px;
+}
+.ppfa-text-input:focus {
+	border: 2px solid #d2cccc;
+}
+.ppfa-text-input.warning {
+	color: #d62222;
+	border: 2px solid #d62222;
+}
+.ppfa-text-input.disabled {
+	border: 1px solid #d2cccc;
+	background-color: #f8f9f9;
+}
+
+/* --- Dropdown --- */
+.ppfa-dropdown {
+	min-width: 100px;
+	height: 32px;
+	background-color: #ebebeb;
+	font-size: 14px;
+	color: #333;
+	border: 0;
+	text-align: left;
+}
+.ppfa-dropdown .caret {
+	float: right;
+	line-height: 30px;
+	position: relative;
+	top: 8px;
+}
+.ppfa-dropdown:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+.ppfa-dropdown-group .dropdown-menu {
+	border: 1px solid #ccc;
+	min-width: 100px;
+	border-radius: 0;
+}
+.btn-group.open .dropdown-toggle {
+	color: #4db3d0;
+}
+.btn-group.open .dropdown-toggle:after {
+	background-color: rgba(0,0,0,0.25);
+	margin-left: 1px;
+}
+.btn-group.open .dropdown-toggle .caret {
+	color: #333;
+}
+
+/* --- Select --- */
+.ppfa-select.select2-dropdown.select2-container-active {
+	border: 1px solid orange;
+}
+.ppfa-select.select2-dropdown-open.select2-container-active {
+	border: 1px solid blue;
+}
