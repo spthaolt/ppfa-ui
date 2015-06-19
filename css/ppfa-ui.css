@@ -138,6 +138,8 @@
 .btn-group.open .dropdown-toggle .caret {
 	color: #333;
 }
+/* --- Dropdown Surveys ---*/
+.ppfa-dropdown-surveys{border: 1px solid #d2cccc;}
 
 /* --- Select --- */
 .ppfa-select.select2-dropdown.select2-container-active {
@@ -146,3 +148,9 @@
 .ppfa-select.select2-dropdown-open.select2-container-active {
 	border: 1px solid blue;
 }
+/* --- Search --- */
+.ppfa-input-search{background:#ebebeb;border:2px solid #ebebeb; border-bottom-left-radius:2px;border-top-left-radius:2px}
+.ppfa-search:focus, .ppfa-input-search:focus,.input-group-btn .ppfa-search.focus,.ppfa-search-group .ppfa-input-search.focus{border:2px solid #d2cccc; background:#fff;color:#8cbcd2}
+.form-group.focus .input-group-btn .btn, .input-group.focus .input-group-btn .btn{border:2px solid #d2cccc; background:#fff;color:#8cbcd2}
+.ppfa-search:focus, .input-group-btn .ppfa-search.focus{border-left:none}
+.input-group-btn:last-child > .ppfa-search{background-color:#ebebeb;border:2px solid #ebebeb;}
