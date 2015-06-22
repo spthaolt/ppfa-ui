@@ -1,5 +1,5 @@
 
-
+/* --- General CTA --- */
 .ppfa-cta {
 	display: inline-block;
 	height: 32px;
@@ -238,13 +238,15 @@
 	border-top:none;}
 .ppfa-dropdown-group-eop .dropdown-menu > li:first-child > a:first-child{color:green}
 .ppfa-dropdown-group-eop .dropdown-menu > li:nth-child(2) > a:first-child{color:red}
-/* --- Select --- */
+
+/* --- DAZ :: Select --- */
 .ppfa-select.select2-dropdown.select2-container-active {
 	border: 1px solid orange;
 }
 .ppfa-select.select2-dropdown-open.select2-container-active {
 	border: 1px solid blue;
 }
+
 /* --- Search --- */
 .ppfa-input-search{
 	background:#ebebeb;
@@ -269,3 +271,64 @@
 	background-color:#ebebeb;
 	border:2px solid #ebebeb;
 	border-left:none}
+
+
+
+
+/* --- Checkbox / Radio --- */
+
+.checkbox input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
+.radio input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
+.checkbox input.custom-radio[type="radio"]:checked + .icons .icon-checked,
+.radio input.custom-radio[type="radio"]:checked + .icons .icon-checked {
+	color: #4db3d0;
+}
+.bootstrap-switch-primary {
+	color: #4db3d0;
+}
+.bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before {
+	background-color: #4db3d0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
