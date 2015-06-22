@@ -138,9 +138,106 @@
 .btn-group.open .dropdown-toggle .caret {
 	color: #333;
 }
-/* --- Dropdown Surveys ---*/
-.ppfa-dropdown-surveys{border: 1px solid #d2cccc;}
-
+/* --- Dropdown for hover tag li --- */
+.dropdown-menu > li:last-child > a:first-child{
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.dropdown-menu > li:first-child > a:first-child{
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{background:#c8e9f2}
+/* --- Dropdown --- */
+.ppfa-dropdown-test {
+	min-width: 100px;
+	height: 32px;
+	background-color: #ebebeb;
+	font-size: 14px;
+	color: #333;
+	border: 0;
+	text-align: left;
+}
+.ppfa-dropdown-test .caret {
+	float: right;
+	line-height: 30px;
+	position: relative;
+	top: 8px;
+}
+.ppfa-dropdown-test:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+.ppfa-dropdown-group-test .dropdown-menu {
+	min-width: 100px;
+	border-radius: 0;
+	background:#fff;
+	margin-top:0px;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	border-top:none;
+}
+.btn-group.open .dropdown-toggle {
+	color: #4db3d0;
+}
+.btn-group.open .dropdown-toggle:after {
+	background-color: rgba(0,0,0,0.25);
+	margin-left: 1px;
+}
+.btn-group.open .dropdown-toggle .caret {
+	color: #333;
+}
+.ppfa-dropdown-group-test .ppfa-dropdown-test:focus{background-color:#fff;border:2px solid #d2cccc;}
+/* --- eop ---*/
+.ppfa-dropdown-group-eop{border: 1px solid #d2cccc;}
+.ppfa-dropdown-group-eop:focus{border:2px solid #d2cccc;}
+.ppfa-dropdown-eop {
+	min-width: 100px;
+	height: 32px;
+	background-color: #fff;
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+	border: 0 none;
+}
+.ppfa-dropdown-eop .caret {
+	float: right;
+	line-height: 30px;
+	position: relative;
+	top: 8px;
+}
+.ppfa-dropdown-eop:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+.ppfa-dropdown-group-eop .dropdown-menu{
+	min-width: 100px;
+	border-radius: 0;
+	background:#fff;
+	margin-top:1px;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	border-top:none;}
+.ppfa-dropdown-group-eop .dropdown-menu > li:first-child > a:first-child{color:green}
+.ppfa-dropdown-group-eop .dropdown-menu > li:nth-child(2) > a:first-child{color:red}
 /* --- Select --- */
 .ppfa-select.select2-dropdown.select2-container-active {
 	border: 1px solid orange;
@@ -149,8 +246,26 @@
 	border: 1px solid blue;
 }
 /* --- Search --- */
-.ppfa-input-search{background:#ebebeb;border:2px solid #ebebeb; border-bottom-left-radius:2px;border-top-left-radius:2px}
-.ppfa-search:focus, .ppfa-input-search:focus,.input-group-btn .ppfa-search.focus,.ppfa-search-group .ppfa-input-search.focus{border:2px solid #d2cccc; background:#fff;color:#8cbcd2}
-.form-group.focus .input-group-btn .btn, .input-group.focus .input-group-btn .btn{border:2px solid #d2cccc; background:#fff;color:#8cbcd2}
-.ppfa-search:focus, .input-group-btn .ppfa-search.focus{border-left:none}
-.input-group-btn:last-child > .ppfa-search{background-color:#ebebeb;border:2px solid #ebebeb;}
+.ppfa-input-search{
+	background:#ebebeb;
+	border:2px solid #ebebeb; 
+	border-bottom-left-radius:2px;
+	border-top-left-radius:2px
+	}
+.ppfa-search:focus, .ppfa-input-search:focus,.input-group-btn .ppfa-search.focus,.ppfa-search-group .ppfa-input-search.focus{
+	border:2px solid #d2cccc;
+	background:#fff;
+	color:#8cbcd2
+	}
+.form-group.focus .input-group-btn .btn, .input-group.focus .input-group-btn .btn{
+	border:2px solid #d2cccc; 
+	border-left:none;
+	background:#fff;
+	color:#8cbcd2
+	}
+.ppfa-search:focus, .input-group-btn .ppfa-search.focus{
+	border-left:none}
+.input-group-btn:last-child > .ppfa-search{
+	background-color:#ebebeb;
+	border:2px solid #ebebeb;
+	border-left:none}
