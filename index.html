@@ -47,6 +47,9 @@
         <div class="col-xs-3">
           <a href="#fakelink" class="ppfa-cta ppfa-cta-warning">Warning CTA</a>
         </div>
+		<div class="col-xs-3">
+          <a href="#fakelink" class="ppfa-cta ppfa-cta-icon-comment">0</a>
+        </div>
       </div><!-- demo -->
 
       <h3 class="demo-panel-title">Inputs</h3>
@@ -128,15 +131,24 @@
           </select>
         </div> <!-- /.col-xs-3 -->
         <div class="col-xs-3">
-		<p>Year / Affiliate</p>
-          <select class="form-control select select-primary ppfa-select" data-toggle="select">
-            <option value="0">Choose hero</option>
-            <option value="1">Spider Man</option>
-            <option value="2">Wolverine</option>
-            <option value="3">Captain America</option>
-            <option value="4" selected>X-Men</option>
-            <option value="5">Crocodile</option>
+		<p>Type and Select</p>
+          <select id="ppfa-select" multiple="multiple" class="form-control select select-primary ppfa-select-type" data-toggle="select">
+				<option value="cheese">Cheese</option>
+				<option value="tomatoes">Tomatoes</option>
+				<option value="mozarella">Mozzarella</option>
+			</select>
+        </div> <!-- /.col-xs-3 -->
+		<div class="col-xs-3">
+		<p>Surveys</p>
+          <select class="form-control select select-primary ppfa-select-surveys" data-toggle="select">
+            <option value="0">Item 1</option>
+            <option value="1" selected>Item 2</option>
+            <option value="2">Item 3</option>
           </select>
+        </div> <!-- /.col-xs-3 -->
+		<div class="col-xs-3">
+		<p>check</p>
+			
         </div> <!-- /.col-xs-3 -->
       </div><!--row-->
 
@@ -177,11 +189,6 @@
           </div>
         </div> <!-- /.col-xs-6 -->
       </div> <!-- /.row -->
-
-      
-
-
-
 
       <div class="row">
         <div class="col-xs-3">
@@ -566,7 +573,21 @@
     <script src="dist/js/vendor/video.js"></script>
     <script src="dist/js/flat-ui.min.js"></script>
     <script src="docs/assets/js/application.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script>
+	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	$(document).ready(function(){
+		$('.select2-arrow').append( "<span class='caret'></span>" );
+		$(".ppfa-dropdown-eop").focus(function(){
+			$(".ppfa-dropdown-group-eop").css("border", "2px solid #d2cccc");
+		});
+	});
+	$(function() {
+		$('#ppfa-select').multiselect({
+		includeSelectAllOption: true
+		});
+	});
+	</script>
   </body>
 </html>
