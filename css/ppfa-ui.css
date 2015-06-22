@@ -283,7 +283,6 @@
 /* --- Select --- */
 .select2-arrow{border-style:hidden; right:0px; top:0; padding:5px 5px;}
 .select-primary .select2-choice{background:#fff; color:#000; border: 1px solid #d2cccc;}
-.select-primary .select2-choice:hover, .select-primary .select2-choice:active,.select-primary .select2-choice:focus{background:#fff; bolder:none}
 .select2-drop .select2-results > li:first-child > .select2-result-label{border-top-left-radius:0px;border-top-right-radius:0px;}
 .select2-drop .select2-results > li:last-child> .select2-result-label{border-bottom-left-radius:0px;border-bottom-right-radius:0px;}
 .select2-drop .select2-result-selectable .select2-result-label:hover{background:#c8e9f2}
@@ -291,7 +290,7 @@
   background: #c8e9f2;
   }
   /* ---- Select Type and Select---*/
-.ppfa-select .select2-choice{background:#ebebeb;color:#000; border:none; border-radius:0;}
+.ppfa-select .select2-choice{background:#ebebeb;color:#000; border:none; border-radius:0; padding:5px 39px 5px 15px}
 .ppfa-select .select2-arrow:after {
 	content: "";	
 	background-color: rgba(0,0,0,0.05);
@@ -304,8 +303,6 @@
 	right: 0;
 	border-top: 2px solid #d2cccc;
 }
-.ppfa-select .select2-choice:focus, .ppfa-select .select2-choice:hover,
-.ppfa-select .select2-choice:active{background:#fff; border: 2px solid #d2cccc;}
 /* ---- Select Type and Select 1---*/
 .ppfa-select-type .select2-choices{background:#ebebeb; border:none; border-radius:0;}
 .ppfa-select-type .select2-arrow:after {
