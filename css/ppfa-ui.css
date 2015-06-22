@@ -1,5 +1,6 @@
 
 /* --- General CTA --- */
+
 .ppfa-cta {
 	display: inline-block;
 	height: 32px;
@@ -76,6 +77,43 @@
 	border-bottom: 4px solid #951818;
 }
 
+/* --- Icon Comment CTA --- */
+.ppfa-cta-icon-comment{
+	background-color:#4db4d0; 
+	border-radius:0px;
+	border-top: 3px solid #358cb3;
+	color:white; 
+	cursor:pointer; 
+	height:27px; 
+	text-align:center; 
+	width:27px;}
+.ppfa-cta-icon-comment:after{
+	 content: '';
+	 position: relative;
+	 display: block;
+	 bottom: 3px;
+	 right: 10px;
+	 width: 0;
+	 height: 0;
+	 border-style: solid;
+	 border-width: 9px 12px 0 0px;
+	 border-color: #4db4d0 transparent;
+	 -webkit-transform: rotate(360deg);
+}
+.ppfa-cta-icon-comment:hover{
+	border-bottom: 3px solid #358cb3;
+	border-top: 3px solid #4db3d0;
+}
+.ppfa-cta-icon-comment:active:after{
+	border-color: #367d91 transparent;
+}
+.ppfa-cta-icon-comment:active{
+	background-color: #367d91;
+	border-top: 3px solid #367d91;
+	border-bottom: 3px solid #25627d;
+	color:#000;
+}
+	
 /* --- Text Inputs --- */
 .ppfa-text-input {
 	height: 32px;
@@ -138,6 +176,7 @@
 .btn-group.open .dropdown-toggle .caret {
 	color: #333;
 }
+
 /* --- Dropdown for hover tag li --- */
 .dropdown-menu > li:last-child > a:first-child{
 	border-bottom-left-radius:0px;
@@ -148,7 +187,7 @@
 	border-top-right-radius:0px;
 }
 .dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{background:#c8e9f2}
-/* --- Dropdown --- */
+/* --- Dropdown Test--- */
 .ppfa-dropdown-test {
 	min-width: 100px;
 	height: 32px;
@@ -199,7 +238,6 @@
 .ppfa-dropdown-group-test .ppfa-dropdown-test:focus{background-color:#fff;border:2px solid #d2cccc;}
 /* --- eop ---*/
 .ppfa-dropdown-group-eop{border: 1px solid #d2cccc;}
-.ppfa-dropdown-group-eop:focus{border:2px solid #d2cccc;}
 .ppfa-dropdown-eop {
 	min-width: 100px;
 	height: 32px;
@@ -231,7 +269,7 @@
 	min-width: 100px;
 	border-radius: 0;
 	background:#fff;
-	margin-top:1px;
+	margin-top:2px;
 	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
 	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
@@ -247,13 +285,92 @@
 	border: 1px solid blue;
 }
 
+/* --- Select --- */
+.select2-arrow{border-style:hidden; right:0px; top:0; padding:5px 5px;}
+.select-primary .select2-choice{background:#fff; color:#000; border: 1px solid #d2cccc;}
+.select2-drop .select2-results > li:first-child > .select2-result-label{border-top-left-radius:0px;border-top-right-radius:0px;}
+.select2-drop .select2-results > li:last-child> .select2-result-label{border-bottom-left-radius:0px;border-bottom-right-radius:0px;}
+.select2-drop .select2-result-selectable .select2-result-label:hover{background:#c8e9f2}
+.select2-drop .select2-highlighted > .select2-result-label {
+  background: #c8e9f2;
+  }
+  /* ---- Select Type and Select---*/
+.ppfa-select .select2-choice{background:#ebebeb;color:#000; border:none; border-radius:0; padding:5px 39px 5px 15px}
+.ppfa-select .select2-arrow:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+/* ---- Select Type and Select 1---*/
+.ppfa-select-type .select2-choices{background:#ebebeb; border:none; border-radius:0;}
+.ppfa-select-type .select2-arrow:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+.ppfa-select-type .select2-choice:focus, .ppfa-select-type .select2-choice:hover,
+.ppfa-select-type .select2-choice:active{background:#fff; border: 2px solid #d2cccc;}
+/* ---- Select Test---*/
+.ppfa-select-test .select2-choice{background:#ebebeb; border:none; border-radius:0; padding:5px 39px 5px 15px}
+.ppfa-select-test .select2-arrow:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+/* ---- Select Surveys Test---*/
+.ppfa-select-surveys-test{background:#ebebeb}
+/* ---- Select Surveys---*/
+.ppfa-select-surveys .select2-choice{background:#ebebeb; border:1px solid #d2cccc; border-radius:0; padding:5px 39px 5px 15px}
+.ppfa-select-surveys .select2-arrow:after {
+	content: "";	
+	background-color: rgba(0,0,0,0.05);
+	display: block;
+	width: 24px;
+	height: 32px;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top: 2px solid #d2cccc;
+}
+.select2-drop{background:#fff; margin:0; border-radius:0;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);}
+.ppfa-select-surveys.open .select2-arrow:after{background-color: rgba(0,0,0,0.25);}
+
 /* --- Search --- */
 .ppfa-input-search{
 	background:#ebebeb;
 	border:2px solid #ebebeb; 
 	border-bottom-left-radius:2px;
-	border-top-left-radius:2px
+	border-top-left-radius:2px;
+	height:30px;
+	padding:4px 12px;
 	}
+.btn.ppfa-search{height:30px;}
+.btn [class^="fui-"]{top:auto; bottom:5px;}
 .ppfa-search:focus, .ppfa-input-search:focus,.input-group-btn .ppfa-search.focus,.ppfa-search-group .ppfa-input-search.focus{
 	border:2px solid #d2cccc;
 	background:#fff;
@@ -271,8 +388,6 @@
 	background-color:#ebebeb;
 	border:2px solid #ebebeb;
 	border-left:none}
-
-
 
 
 /* --- Checkbox / Radio --- */
