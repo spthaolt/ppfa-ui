@@ -122,12 +122,9 @@
 		<div class="col-xs-3">
 		<p>Year / Affiliate</p>
           <select class="form-control select select-primary ppfa-select" data-toggle="select">
-            <option value="0">Choose hero</option>
+            <option value="0" selected>Choose hero</option>
             <option value="1">Spider Man</option>
             <option value="2">Wolverine</option>
-            <option value="3">Captain America</option>
-            <option value="4" selected>X-Men</option>
-            <option value="5">Crocodile</option>
           </select>
         </div> <!-- /.col-xs-3 -->
         <div class="col-xs-3">
@@ -146,42 +143,10 @@
             <option value="2">Item 3</option>
           </select>
         </div> <!-- /.col-xs-3 -->
-		<div class="col-xs-3">
-		<p>check</p>
-			
-        </div> <!-- /.col-xs-3 -->
       </div><!--row-->
 
 
       <div class="row">
-        <div class="col-xs-3">
-          <h3 class="demo-panel-title">Dropdown</h3>
-
-          <div class="btn-group">
-            <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">Default <span class="caret"></span></button>
-            <ul role="menu" class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </div><!-- /btn-group -->
-        </div> <!-- /.col-xs-3 -->
-
-
-
-        <div class="col-xs-3">
-          <h3 class="demo-panel-title">Select</h3>
-          <select class="form-control select select-primary" data-toggle="select">
-            <option value="0">Choose hero</option>
-            <option value="1">Spider Man</option>
-            <option value="2">Wolverine</option>
-            <option value="3">Captain America</option>
-            <option value="4" selected>X-Men</option>
-            <option value="5">Crocodile</option>
-          </select>
-        </div> <!-- /.col-xs-3 -->
         <div class="col-xs-6">
           <h3 class="demo-panel-title">Tags input</h3>
           <div class="tagsinput-primary">
@@ -579,14 +544,18 @@
 	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 	$(document).ready(function(){
 		$('.select2-arrow').append( "<span class='caret'></span>" );
+		$(".ppfa-dropdown-test").focus(function(){
+			$(".ppfa-dropdown-group-test").css("border", "2px solid #d2cccc");
+		});
 		$(".ppfa-dropdown-eop").focus(function(){
 			$(".ppfa-dropdown-group-eop").css("border", "2px solid #d2cccc");
 		});
-	});
-	$(function() {
 		$('#ppfa-select').multiselect({
 		includeSelectAllOption: true
 		});
+	});
+	$(function() {
+		
 	});
 	</script>
   </body>

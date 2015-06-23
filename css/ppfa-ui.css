@@ -1,6 +1,5 @@
 
 /* --- General CTA --- */
-
 .ppfa-cta {
 	display: inline-block;
 	height: 32px;
@@ -9,19 +8,14 @@
 	padding: 0 15px;
 	cursor: pointer;
 }
-.ppfa-cta:hover {
-	color: rgba(0,0,0,0.33);
-}
-.ppfa-cta:focus {
-	color: #fff;
-}
+.ppfa-cta:hover {color: rgba(0,0,0,0.33);}
+.ppfa-cta:focus {color: #fff;}
 .ppfa-cta:active {
 	color: #fff;
 	transition: all 0.25s ease-in;
 	position: relative;
 	top: 1px;
 }
-
 
 /* --- Primary CTA --- */
 .ppfa-cta-primary {
@@ -104,14 +98,14 @@
 	border-bottom: 3px solid #358cb3;
 	border-top: 3px solid #4db3d0;
 }
-.ppfa-cta-icon-comment:active:after{
-	border-color: #367d91 transparent;
-}
 .ppfa-cta-icon-comment:active{
 	background-color: #367d91;
 	border-top: 3px solid #367d91;
 	border-bottom: 3px solid #25627d;
 	color:#000;
+}
+.ppfa-cta-icon-comment:active:after{
+	border-color: #367d91 transparent;
 }
 	
 /* --- Text Inputs --- */
@@ -132,6 +126,19 @@
 	border: 1px solid #d2cccc;
 	background-color: #f8f9f9;
 }
+
+/* --- Dropdown for hover tag li --- */
+.dropdown-menu > li:last-child > a:first-child{
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.dropdown-menu > li:first-child > a:first-child{
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{
+	background:#c8e9f2;
+	}
 
 /* --- Dropdown --- */
 .ppfa-dropdown {
@@ -154,7 +161,7 @@
 	background-color: rgba(0,0,0,0.05);
 	display: block;
 	width: 24px;
-	height: 32px;
+	height: 33px;
 	float: right;
 	position: absolute;
 	top: 0;
@@ -177,17 +184,7 @@
 	color: #333;
 }
 
-/* --- Dropdown for hover tag li --- */
-.dropdown-menu > li:last-child > a:first-child{
-	border-bottom-left-radius:0px;
-	border-bottom-right-radius:0px;
-}
-.dropdown-menu > li:first-child > a:first-child{
-	border-top-left-radius:0px;
-	border-top-right-radius:0px;
-}
-.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{background:#c8e9f2}
-/* --- Dropdown Test--- */
+/* --- Dropdown Test --- */
 .ppfa-dropdown-test {
 	min-width: 100px;
 	height: 32px;
@@ -208,7 +205,7 @@
 	background-color: rgba(0,0,0,0.05);
 	display: block;
 	width: 24px;
-	height: 32px;
+	height: 33px;
 	float: right;
 	position: absolute;
 	top: 0;
@@ -219,12 +216,16 @@
 	min-width: 100px;
 	border-radius: 0;
 	background:#fff;
-	margin-top:0px;
+	margin-top:2px;
 	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
 	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
 	border-top:none;
 }
+.ppfa-dropdown-group-test .ppfa-dropdown-test:focus{
+	background-color:#fff;
+}
+.ppfa-dropdown-test:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;} 
 .btn-group.open .dropdown-toggle {
 	color: #4db3d0;
 }
@@ -235,9 +236,8 @@
 .btn-group.open .dropdown-toggle .caret {
 	color: #333;
 }
-.ppfa-dropdown-group-test .ppfa-dropdown-test:focus{background-color:#fff;border:2px solid #d2cccc;}
-/* --- eop ---*/
-.ppfa-dropdown-group-eop{border: 1px solid #d2cccc;}
+
+/* --- Dropdown Master/EOP ---*/
 .ppfa-dropdown-eop {
 	min-width: 100px;
 	height: 32px;
@@ -258,13 +258,17 @@
 	background-color: rgba(0,0,0,0.05);
 	display: block;
 	width: 24px;
-	height: 32px;
+	height: 33px;
 	float: right;
 	position: absolute;
 	top: 0;
 	right: 0;
 	border-top: 2px solid #d2cccc;
 }
+.ppfa-dropdown-group-eop{
+	border: 1px solid #d2cccc;
+}
+.ppfa-dropdown-eop:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;} 
 .ppfa-dropdown-group-eop .dropdown-menu{
 	min-width: 100px;
 	border-radius: 0;
@@ -282,25 +286,33 @@
 	border: 1px solid orange;
 }
 .ppfa-select.select2-dropdown-open.select2-container-active {
-	border: 1px solid blue;
+	border: 2px solid #d2cccc;
+	border-radius:0;
 }
 
 /* --- Select --- */
-.select2-arrow{border-style:hidden; right:0px; top:0; padding:5px 5px;}
-.select-primary .select2-choice{background:#fff; color:#000; border: 1px solid #d2cccc;}
+.select2-arrow{border-style:hidden; right:0px; top:0; padding:5px 6px 5px 4px}
+.select2-dropdown-open .select2-arrow{background:rgba(0, 0, 0, 0.25);}
+.select-primary .select2-choice{background:#fff; color:#000;}
 .select2-drop .select2-results > li:first-child > .select2-result-label{border-top-left-radius:0px;border-top-right-radius:0px;}
 .select2-drop .select2-results > li:last-child> .select2-result-label{border-bottom-left-radius:0px;border-bottom-right-radius:0px;}
-.select2-drop .select2-result-selectable .select2-result-label:hover{background:#c8e9f2}
-.select2-drop .select2-highlighted > .select2-result-label {
-  background: #c8e9f2;
-  }
-  /* ---- Select Type and Select---*/
-.ppfa-select .select2-choice{background:#ebebeb;color:#000; border:none; border-radius:0; padding:5px 39px 5px 15px}
+.select2-drop .select2-result-selectable .select2-result-label:hover{background:#c8e9f2;}
+.select2-drop .select2-highlighted > .select2-result-label {background: #c8e9f2;}
+.select2-drop{background:#fff; margin-top:4px; border-radius:0;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);}
+.select2-drop-multi .select2-results,.select2-drop-multi .select2-result{padding:0;}
+.select2-drop-multi .select2-result-label{border-radius:0;}
+	
+/* ---- Select Type and Select---*/
+.ppfa-select .select2-choice{background:#ebebeb; border-radius:0; padding:5px 39px 5px 15px}
+.ppfa-select .select2-choice:focus{background:#fff;}
 .ppfa-select .select2-arrow:after {
 	content: "";	
 	background-color: rgba(0,0,0,0.05);
 	display: block;
-	width: 24px;
+	width: 27px;
 	height: 32px;
 	float: right;
 	position: absolute;
@@ -308,13 +320,17 @@
 	right: 0;
 	border-top: 2px solid #d2cccc;
 }
+.ppfa-select .select2-choice:focus{border:2px solid #d2cccc;}
+.ppfa-select.open .select2-arrow:after{background-color: rgba(0,0,0,0.25);}
+.ppfa-select .select2-choice:hover{background:#ebebeb; color:#000}
+
 /* ---- Select Type and Select 1---*/
-.ppfa-select-type .select2-choices{background:#ebebeb; border:none; border-radius:0;}
+.ppfa-select-type .select2-choices{background:#ebebeb; border:none; border-radius:0; padding-left:10px;}
 .ppfa-select-type .select2-arrow:after {
 	content: "";	
 	background-color: rgba(0,0,0,0.05);
 	display: block;
-	width: 24px;
+	width: 27px;
 	height: 32px;
 	float: right;
 	position: absolute;
@@ -324,29 +340,15 @@
 }
 .ppfa-select-type .select2-choice:focus, .ppfa-select-type .select2-choice:hover,
 .ppfa-select-type .select2-choice:active{background:#fff; border: 2px solid #d2cccc;}
-/* ---- Select Test---*/
-.ppfa-select-test .select2-choice{background:#ebebeb; border:none; border-radius:0; padding:5px 39px 5px 15px}
-.ppfa-select-test .select2-arrow:after {
-	content: "";	
-	background-color: rgba(0,0,0,0.05);
-	display: block;
-	width: 24px;
-	height: 32px;
-	float: right;
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-top: 2px solid #d2cccc;
-}
-/* ---- Select Surveys Test---*/
-.ppfa-select-surveys-test{background:#ebebeb}
+.ppfa-select-type .select2-search-choice{color:#000; font-size:14px; margin:0; padding: 8px 21px 8px 10px; height:32px;}
+
 /* ---- Select Surveys---*/
-.ppfa-select-surveys .select2-choice{background:#ebebeb; border:1px solid #d2cccc; border-radius:0; padding:5px 39px 5px 15px}
+.ppfa-select-surveys .select2-choice{background:#fff; border:1px solid #d2cccc; border-radius:0; padding:5px 39px 5px 15px}
 .ppfa-select-surveys .select2-arrow:after {
 	content: "";	
 	background-color: rgba(0,0,0,0.05);
 	display: block;
-	width: 24px;
+	width: 27px;
 	height: 32px;
 	float: right;
 	position: absolute;
@@ -354,11 +356,10 @@
 	right: 0;
 	border-top: 2px solid #d2cccc;
 }
-.select2-drop{background:#fff; margin:0; border-radius:0;
-	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
-	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);}
+.ppfa-select-surveys .select2-choice:focus{border:2px solid #d2cccc;}
 .ppfa-select-surveys.open .select2-arrow:after{background-color: rgba(0,0,0,0.25);}
+.ppfa-select-surveys.select2-dropdown-open.select2-container-active {border: 1px solid #d2cccc;border-radius:0;}
+.ppfa-select-surveys .select2-choice:hover{background:#fff; color:#000; border-color:#d2cccc}
 
 /* --- Search --- */
 .ppfa-input-search{
@@ -389,7 +390,6 @@
 	border:2px solid #ebebeb;
 	border-left:none}
 
-
 /* --- Checkbox / Radio --- */
 
 .checkbox input.custom-checkbox[type="checkbox"]:checked + .icons .icon-checked,
@@ -405,45 +405,10 @@
 	background-color: #4db3d0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* --- Show textbox search in select--- */
+.select2-search{display:inline-block}
+.form-control, .select2-search input[type="text"]{border-radius:3px;}
+.form-group.focus .form-control, .form-control:focus,
+.form-group.focus .select2-search input[type="text"], .select2-search input[type="text"]:focus{
+	border-color:#d2cccc;
+}
