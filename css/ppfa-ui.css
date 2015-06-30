@@ -80,13 +80,14 @@
 	cursor:pointer; 
 	height:27px; 
 	text-align:center; 
-	width:27px;}
+	padding: 0 10px;
+}
 .ppfa-cta-icon-comment:after{
 	 content: '';
 	 position: relative;
 	 display: block;
 	 bottom: 3px;
-	 right: 10px;
+	 right: 5px;
 	 width: 0;
 	 height: 0;
 	 border-style: solid;
