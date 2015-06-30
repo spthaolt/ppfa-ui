@@ -429,19 +429,19 @@ a.ppfa-link-export:hover{color:#999999}
 }
 /* --- Demo switches --- */
 .ppfa-demo-switches .bootstrap-switch-primary {
-	color: #353535;
-	background-color:#76e6b6;
+	color: #333333;
+	background-color:#44d287;
 } 
-.ppfa-demo-switches.bootstrap-switch-handle-off::before{border-color:#76e6b6}
+.ppfa-demo-switches.bootstrap-switch-handle-off::before{border-color:#44d287}
 .ppfa-demo-switches .bootstrap-switch-default{
 	background-color:#ececec;
-	color: #353535;
+	color: #333333;
 }
-.ppfa-demo-switches .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before{background-color:#353535;}
-.ppfa-demo-switches .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before{border-color:#76e6b6;}
+.ppfa-demo-switches .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before{background-color:#333333;}
+.ppfa-demo-switches .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before{border-color:#44d287}
 .ppfa-demo-switches .bootstrap-switch-off .bootstrap-switch-handle-on ~ .bootstrap-switch-handle-off.bootstrap-switch-default::before{
 	border-color:#ececec;
-	background:#da1d23;
+	background:#d62222;
 }
 .ppfa-demo-switches .bootstrap-switch-on .bootstrap-switch-primary ~ .bootstrap-switch-handle-off{box-shadow:none}
 /* --- Show textbox search in select--- */
