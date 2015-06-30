@@ -427,7 +427,23 @@ a.ppfa-link-export:hover{color:#999999}
 .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before {
 	background-color: #4db3d0;
 }
-
+/* --- Demo switches --- */
+.ppfa-demo-switches .bootstrap-switch-primary {
+	color: #353535;
+	background-color:#76e6b6;
+} 
+.ppfa-demo-switches.bootstrap-switch-handle-off::before{border-color:#76e6b6}
+.ppfa-demo-switches .bootstrap-switch-default{
+	background-color:#ececec;
+	color: #353535;
+}
+.ppfa-demo-switches .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before{background-color:#353535;}
+.ppfa-demo-switches .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before{border-color:#76e6b6;}
+.ppfa-demo-switches .bootstrap-switch-off .bootstrap-switch-handle-on ~ .bootstrap-switch-handle-off.bootstrap-switch-default::before{
+	border-color:#ececec;
+	background:#da1d23;
+}
+.ppfa-demo-switches .bootstrap-switch-on .bootstrap-switch-primary ~ .bootstrap-switch-handle-off{box-shadow:none}
 /* --- Show textbox search in select--- */
 .select2-search{display:inline-block}
 .form-control, .select2-search input[type="text"]{border-radius:3px;}
