@@ -108,7 +108,29 @@
 .ppfa-cta-icon-comment:active:after{
 	border-color: #367d91 transparent;
 }
-	
+/* --- Other Buttons & Links --- */
+/* --- Edit --- */
+.ppfa-link-edit{color:#a7a7a7}
+.ppfa-link-edit:hover{color:#5ab8b7}
+.ppfa-link-edit:active{color:#323232}
+/* --- Refresh --- */
+.ppfa-link-refresh{color:#a4d1d7}
+.ppfa-link-refresh:hover{color:#3fabc8}
+.ppfa-link-refresh:active{color:#323232}
+/* --- Delete --- */
+.ppfa-link-delete{color:#808080}
+.ppfa-link-delete:hover{color:red}
+.ppfa-link-delete:active{color:#323232}
+/* --- Expand --- */
+.ppfa-link-expand{color:#ababab}
+.ppfa-link-expand:hover,.ppfa-link-expand:active{color:#323232}
+/* --- Minimize --- */
+.ppfa-link-minimize{color:#ababab}
+.ppfa-link-minimize:hover,.ppfa-link-minimize:active{color:#323232}
+/* --- Export --- */
+.ppfa-link-export{color:#378cb1}
+a.ppfa-link-export:hover{color:#999999}
+.ppfa-link-export:active{color:#323232}
 /* --- Text Inputs --- */
 .ppfa-text-input {
 	height: 32px;
