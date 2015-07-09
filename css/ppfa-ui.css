@@ -421,6 +421,7 @@ a.ppfa-link-export:hover{color:#999999}
 .bootstrap-switch-primary ~ .bootstrap-switch-handle-off::before {
 	background-color: #4db3d0;
 }
+
 /* --- Demo switches --- */
 .ppfa-demo-switches .bootstrap-switch-primary {
 	color: #333333;
@@ -448,7 +449,6 @@ a.ppfa-link-export:hover{color:#999999}
 
 /* --- PPFA Custom Font --- */
 @charset "UTF-8";
-
 @font-face {
   font-family: "ppfa-aed-custom";
   src:url("../fonts/ppfa-ead-custom.eot");
@@ -483,7 +483,6 @@ a.ppfa-link-export:hover{color:#999999}
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-arrow-accordion-button:before { content: "b"; }
 .icon-arrow-accordion-button-copy:before { content: "i"; }
 .icon-calendar-icon:before { content: "j"; }
@@ -511,7 +510,45 @@ a.ppfa-link-export:hover{color:#999999}
 .icon-tick-sign:before { content: "w"; }
 .icon-trash-bin:before { content: "v"; }
 .icon-warning-sign-icon:before { content: "u"; }
-.icon-question58:before { content: "A"; }
+.icon-question:before { content: "A"; }
+.icon-arrow-address-back:before { content: "B"; }
+.icon-refresh-icon:before { content: "C"; }
 
-
-
+/* --- Tooltip Bubble --- */
+.ppfa-bubble {
+	position: relative;
+	width: 250px;
+	height: 120px;
+	padding: 0px;
+	background: #FFFFAA;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: #aaaaaa solid 1px;
+}
+.ppfa-bubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 12px 0;
+	border-color: #FFFFAA transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -12px;
+	bottom: -15px;
+	left: 25%;
+}
+.ppfa-bubble:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 12px 0;
+	border-color: #aaaaaa transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	margin-left: -12px;
+	bottom: -16px;
+	left: 25%;
+}
