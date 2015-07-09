@@ -166,7 +166,7 @@ a.ppfa-link-export:hover{color:#999999}
 /* --- Dropdown --- */
 .ppfa-dropdown {
 	min-width: 100px;
-	height: 32px;
+	height: 33px;
 	background-color: #ebebeb;
 	font-size: 14px;
 	color: #333;
@@ -188,7 +188,7 @@ a.ppfa-link-export:hover{color:#999999}
 	float: right;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 1px;
 	border-top: 2px solid #d2cccc;
 }
 .ppfa-dropdown-group .dropdown-menu {
@@ -196,21 +196,11 @@ a.ppfa-link-export:hover{color:#999999}
 	min-width: 100px;
 	border-radius: 0;
 }
-.btn-group.open .dropdown-toggle {
-	color: #4db3d0;
-}
-.btn-group.open .dropdown-toggle:after {
-	background-color: rgba(0,0,0,0.25);
-	margin-left: 1px;
-}
-.btn-group.open .dropdown-toggle .caret {
-	color: #333;
-}
 
 /* --- Dropdown Test --- */
 .ppfa-dropdown-test {
 	min-width: 100px;
-	height: 32px;
+	height: 33px;
 	background-color: #ebebeb;
 	font-size: 14px;
 	color: #333;
@@ -232,7 +222,7 @@ a.ppfa-link-export:hover{color:#999999}
 	float: right;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 1px;
 	border-top: 2px solid #d2cccc;
 }
 .ppfa-dropdown-group-test .dropdown-menu {
@@ -251,6 +241,7 @@ a.ppfa-link-export:hover{color:#999999}
 .ppfa-dropdown-test:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;} 
 .btn-group.open .dropdown-toggle {
 	color: #4db3d0;
+	border:2px solid #d2cccc;
 }
 .btn-group.open .dropdown-toggle:after {
 	background-color: rgba(0,0,0,0.25);
@@ -263,12 +254,13 @@ a.ppfa-link-export:hover{color:#999999}
 /* --- Dropdown Master/EOP ---*/
 .ppfa-dropdown-eop {
 	min-width: 100px;
-	height: 32px;
+	height: 33px;
 	background-color: #fff;
 	font-size: 14px;
 	color: #333;
 	text-align: left;
 	border: 0 none;
+	border: 1px solid #d2cccc;
 }
 .ppfa-dropdown-eop .caret {
 	float: right;
@@ -285,11 +277,11 @@ a.ppfa-link-export:hover{color:#999999}
 	float: right;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 1px;
 	border-top: 2px solid #d2cccc;
 }
 .ppfa-dropdown-group-eop{
-	border: 1px solid #d2cccc;
+	
 }
 .ppfa-dropdown-eop:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;} 
 .ppfa-dropdown-group-eop .dropdown-menu{
