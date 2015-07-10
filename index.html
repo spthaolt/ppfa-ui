@@ -55,22 +55,22 @@
 	  <h3 class="demo-panel-title">Other Buttons & Links</h3>
       <div class="row">
         <div class="col-xs-1">
-          <a href="#" class="ppfa-link-edit"><span class="icon-edit-icon"></span></a>
+          <a href="#" class="ppfa-link ppfa-link-edit"><span class="icon-edit-icon"></span></a>
         </div>
         <div class="col-xs-1">
-          <a href="#" class="ppfa-link-refresh"><span class="icon-edit-icon"></span></a>
+          <a href="#" class="ppfa-link ppfa-link-refresh"><span class="icon-refresh-icon"></span></a>
         </div>
 		<div class="col-xs-1">
-          <a href="#" class="ppfa-link-delete"><span class="icon-trash-bin"></span></a>
+          <a href="#" class="ppfa-link ppfa-link-delete"><span class="icon-trash-bin"></span></a>
         </div>
 		<div class="col-xs-1">
-          <a href="#" class="ppfa-link-expand"><span class="icon-expand"></span></a>
+          <a href="#" class="ppfa-link ppfa-link-expand"><span class="icon-expand"></span></a>
         </div>
 		<div class="col-xs-1">
-          <a href="#" class="ppfa-link-minimize"><span class="icon-retract"></span></a>
+          <a href="#" class="ppfa-link ppfa-link-minimize"><span class="icon-retract"></span></a>
         </div>
 		<div class="col-xs-3">
-          <a href="#" class="ppfa-link-export"><span class="icon-document-icon"></span>&nbsp; Export or Download</a>
+          <a href="#" class="ppfa-link ppfa-link-export"><span class="icon-document-icon"></span>&nbsp; Export or Download</a>
         </div>
       </div>
 	  
@@ -101,7 +101,7 @@
 
       <h3 class="demo-panel-title">Dropdown</h3>
       <div class="row">
-        <div class="col-xs-3">
+	  <div class="col-xs-3">
 		<p>Year / Affiliate</p>
           <div class="btn-group ppfa-dropdown-group">
             <button data-toggle="dropdown" class="ppfa-dropdown dropdown-toggle" type="button">Year <span class="caret"></span></button>
@@ -111,24 +111,12 @@
               <li><a href="#">2013</a></li>
             </ul>
           </div><!-- /btn-group -->
-        </div>
-		
-		<div class="col-xs-3">
-		<p>Year / Affiliate</p>
-          <div class="btn-group ppfa-dropdown-group-test">
-            <button data-toggle="dropdown" class="ppfa-dropdown-test dropdown-toggle" type="button">Year <span class="caret"></span></button>
-            <ul role="menu" class="dropdown-menu">
-              <li><a href="#">2015</a></li>
-              <li><a href="#">2014</a></li>
-              <li><a href="#">2013</a></li>
-            </ul>
-          </div><!-- /btn-group -->
-        </div>
+        </div> 
 		
 		<div class="col-xs-3">
 		<p>Master / EOP</p>
-          <div class="btn-group ppfa-dropdown-group-eop">
-            <button data-toggle="dropdown" class="ppfa-dropdown-eop dropdown-toggle" type="button">None Set <span class="caret"></span></button>
+          <div class="btn-group ppfa-dropdown-group-master-eop">
+            <button data-toggle="dropdown" class="ppfa-dropdown ppfa-dropdown-master-eop dropdown-toggle" type="button">None Set <span class="caret"></span></button>
             <ul role="menu" class="dropdown-menu">
               <li><a href="#">Met</a></li>
               <li><a href="#">Not Met</a></li>
@@ -137,6 +125,17 @@
           </div><!-- /btn-group -->
         </div>
         
+		<div class="col-xs-3">
+		<p>Year / Affiliate</p>
+          <div class="btn-group ppfa-dropdown-group-year-affiliate">
+            <button data-toggle="dropdown" class="ppfa-dropdown ppfa-dropdown-year-affiliate dropdown-toggle" type="button">Year <span class="caret"></span></button>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">2015</a></li>
+              <li><a href="#">2014</a></li>
+              <li><a href="#">2013</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div>
       </div><!--row-->
 
 	  <h3 class="demo-panel-title">Select</h3>
@@ -456,7 +455,7 @@
     <script>
     	$(document).ready(function(){
     		$('.select2-arrow').append( "<span class='caret'></span>" );
-    		$('#ppfa-select').multiselect({
+    		$('#ppfa-select-surveys').multiselect({
     		  includeSelectAllOption: true
     		});
     	});

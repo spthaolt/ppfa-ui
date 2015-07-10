@@ -108,6 +108,7 @@
 .ppfa-cta-icon-comment:active:after{
 	border-color: #367d91 transparent;
 }
+
 /* --- Other Buttons & Links --- */
 /* --- Edit --- */
 .ppfa-link-edit{color:#a7a7a7}
@@ -131,6 +132,7 @@
 .ppfa-link-export{color:#378cb1}
 a.ppfa-link-export:hover{color:#999999}
 .ppfa-link-export:active{color:#323232}
+
 /* --- Text Inputs --- */
 .ppfa-text-input {
 	height: 32px;
@@ -196,36 +198,9 @@ a.ppfa-link-export:hover{color:#999999}
 	min-width: 100px;
 	border-radius: 0;
 }
-
-/* --- Dropdown Test --- */
-.ppfa-dropdown-test {
-	min-width: 100px;
-	height: 33px;
-	background-color: #ebebeb;
-	font-size: 14px;
-	color: #333;
-	border: 0;
-	text-align: left;
-}
-.ppfa-dropdown-test .caret {
-	float: right;
-	line-height: 30px;
-	position: relative;
-	top: 8px;
-}
-.ppfa-dropdown-test:after {
-	content: "";	
-	background-color: rgba(0,0,0,0.05);
-	display: block;
-	width: 24px;
-	height: 33px;
-	float: right;
-	position: absolute;
-	top: 0;
-	right: 1px;
-	border-top: 2px solid #d2cccc;
-}
-.ppfa-dropdown-group-test .dropdown-menu {
+/* --- Dropdown Master/EOP, Year/Affiliate --- */
+.ppfa-dropdown-year-affiliate:focus:after, .ppfa-dropdown-master-eop:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;}
+.ppfa-dropdown-group-year-affiliate .dropdown-menu, .ppfa-dropdown-group-master-eop .dropdown-menu {
 	min-width: 100px;
 	border-radius: 0;
 	background:#fff;
@@ -235,10 +210,11 @@ a.ppfa-link-export:hover{color:#999999}
 	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
 	border-top:none;
 }
-.ppfa-dropdown-group-test .ppfa-dropdown-test:focus{
+
+/* --- Dropdown Year/Affiliate --- */
+.ppfa-dropdown-group-year-affiliate .ppfa-dropdown-test:focus{
 	background-color:#fff;
-}
-.ppfa-dropdown-test:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;} 
+} 
 .btn-group.open .dropdown-toggle {
 	color: #4db3d0;
 	border:2px solid #d2cccc;
@@ -252,49 +228,13 @@ a.ppfa-link-export:hover{color:#999999}
 }
 
 /* --- Dropdown Master/EOP ---*/
-.ppfa-dropdown-eop {
-	min-width: 100px;
-	height: 33px;
+.ppfa-dropdown-master-eop {
 	background-color: #fff;
-	font-size: 14px;
-	color: #333;
-	text-align: left;
 	border: 0 none;
 	border: 1px solid #d2cccc;
 }
-.ppfa-dropdown-eop .caret {
-	float: right;
-	line-height: 30px;
-	position: relative;
-	top: 8px;
-}
-.ppfa-dropdown-eop:after {
-	content: "";	
-	background-color: rgba(0,0,0,0.05);
-	display: block;
-	width: 24px;
-	height: 33px;
-	float: right;
-	position: absolute;
-	top: 0;
-	right: 1px;
-	border-top: 2px solid #d2cccc;
-}
-.ppfa-dropdown-group-eop{
-	
-}
-.ppfa-dropdown-eop:focus:after{border-top:none;border-bottom: 2px solid #d2cccc;} 
-.ppfa-dropdown-group-eop .dropdown-menu{
-	min-width: 100px;
-	border-radius: 0;
-	background:#fff;
-	margin-top:2px;
-	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
-	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.75);
-	border-top:none;}
-.ppfa-dropdown-group-eop .dropdown-menu > li:first-child > a:first-child{color:green}
-.ppfa-dropdown-group-eop .dropdown-menu > li:nth-child(2) > a:first-child{color:red}
+.ppfa-dropdown-group-master-eop .dropdown-menu > li:first-child > a:first-child{color:green}
+.ppfa-dropdown-group-master-eop .dropdown-menu > li:nth-child(2) > a:first-child{color:red}
 
 /* --- DAZ :: Select --- */
 .ppfa-select.select2-dropdown.select2-container-active {
@@ -328,12 +268,12 @@ a.ppfa-link-export:hover{color:#999999}
 	content: "";	
 	background-color: rgba(0,0,0,0.05);
 	display: block;
-	width: 27px;
-	height: 32px;
+	width: 29px;
+	height: 33px;
 	float: right;
 	position: absolute;
-	top: -1px;
-	left:2px;
+	bottom:0;
+	left:0;
 	border-top: 2px solid #d2cccc;
 }
 .ppfa-select .select2-choice:focus{border:2px solid #d2cccc;}
@@ -359,24 +299,32 @@ a.ppfa-link-export:hover{color:#999999}
 .ppfa-select-type .select2-search-choice{color:#000; font-size:14px; margin:0; padding: 8px 21px 8px 10px; height:32px;}
 
 /* ---- Select Surveys---*/
-.ppfa-select-surveys .select2-choice{background:#fff; border:1px solid #d2cccc; border-radius:0; padding:5px 39px 5px 15px}
+.ppfa-select-surveys .select2-choice{background:#fff; border-radius:0; padding:4px 39px 4px 15px; border: 1px solid #d2cccc}
+.ppfa-select-surveys .select2-choice:focus{background:#fff;}
+.select2-dropdown-open .select2-choice{border: 2px solid #d2cccc;}
 .ppfa-select-surveys .select2-arrow:after {
 	content: "";	
 	background-color: rgba(0,0,0,0.05);
 	display: block;
-	width: 27px;
-	height: 32px;
+	width: 29px;
+	height: 33px;
 	float: right;
 	position: absolute;
-	top: 0;
-	right: 0;
+	bottom:0;
+	left:0;
 	border-top: 2px solid #d2cccc;
 }
-.ppfa-select-surveys.select2-container-active{border:2px solid #d2cccc;border-radius:0;}
-.ppfa-select-surveys.select2-container-active .select2-choice{border:none} 
-.ppfa-select-surveys.open .select2-arrow:after{background-color: rgba(0,0,0,0.25);border:2px solid #d2cccc;}
-.ppfa-select-surveys.select2-dropdown-open.select2-container-active {border-radius:0;}
-.ppfa-select-surveys .select2-choice:hover{background:#fff; color:#000; border-color:#d2cccc}
+.ppfa-select-surveys .select2-choice:focus{border:2px solid #d2cccc;}
+.ppfa-select-surveys.open .select2-arrow:after{background-color: rgba(0,0,0,0.25); border-top:none;}
+.ppfa-select-surveys .select2-choice:hover{background:#fff; color:#000; border: 1px solid #d2cccc}
+/* --- Show textbox search in select--- */
+.select2-search{display:inline-block}
+.form-control, .select2-search input[type="text"]{border-radius:3px;}
+.form-group.focus .form-control, .form-control:focus,
+.form-group.focus .select2-search input[type="text"], .select2-search input[type="text"]:focus{
+	border-color:#d2cccc;
+}
+
 
 /* --- Search --- */
 .ppfa-input-search{
@@ -439,13 +387,7 @@ a.ppfa-link-export:hover{color:#999999}
 	background:#d62222;
 }
 .ppfa-demo-switches .bootstrap-switch-on .bootstrap-switch-primary ~ .bootstrap-switch-handle-off{box-shadow:none}
-/* --- Show textbox search in select--- */
-.select2-search{display:inline-block}
-.form-control, .select2-search input[type="text"]{border-radius:3px;}
-.form-group.focus .form-control, .form-control:focus,
-.form-group.focus .select2-search input[type="text"], .select2-search input[type="text"]:focus{
-	border-color:#d2cccc;
-}
+
 
 /* --- PPFA Custom Font --- */
 @charset "UTF-8";
