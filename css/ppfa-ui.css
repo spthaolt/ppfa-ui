@@ -307,11 +307,11 @@ a.ppfa-link-export:hover{color:#999999}
 	background-color: rgba(0,0,0,0.05);
 	display: block;
 	width: 29px;
-	height: 33px;
+	height: 30px;
 	float: right;
 	position: absolute;
-	bottom:0;
-	left:0;
+	top:-1px;
+	left:-1px;
 	border-top: 2px solid #d2cccc;
 }
 .ppfa-select-surveys .select2-choice:focus{border:2px solid #d2cccc;}
