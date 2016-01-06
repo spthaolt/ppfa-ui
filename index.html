@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/vendor/bootstrap.min.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-    <link href="css/demo.css" rel="stylesheet">
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
 
     <link href="css/ppfa-ui.css" rel="stylesheet">
 
@@ -101,6 +101,18 @@
 
       <h3 class="demo-panel-title">Dropdown</h3>
       <div class="row">
+	  <div class="col-xs-3">
+		<p>Year / Affiliate</p>
+          <div class="btn-group ppfa-dropdown-group">
+            <button data-toggle="dropdown" class="ppfa-dropdown dropdown-toggle" type="button">Year <span class="caret"></span></button>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="#">2015</a></li>
+              <li><a href="#">2014</a></li>
+              <li><a href="#">2013</a></li>
+            </ul>
+          </div><!-- /btn-group -->
+        </div> 
+		
 		<div class="col-xs-3">
 		<p>Master / EOP</p>
           <div class="btn-group ppfa-dropdown-group-master-eop">
@@ -182,6 +194,15 @@
         </div> <!-- /.col-xs-3 -->
 		</div>
 	</div>
+      <!--<div class="row">	  
+        <div class="col-xs-6">
+          <h3 class="demo-panel-title">Tags input</h3>
+          <div class="tagsinput-primary">
+            <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="School, Teacher, Colleague" />
+          </div>
+        </div> <!-- /.col-xs-6 -->
+      <!--</div> <!-- /.row -->
+
       <div class="row">
         <div class="col-xs-3">
           <h3 class="demo-panel-title">Checkboxes</h3>
@@ -258,7 +279,59 @@
             </tr>
           </table>
         </div> <!-- /.col-xs-3 -->
+
       </div> <!-- /.row -->
+
+      <!--<div class="demo-row typography-row">
+      	<div class="demo-title">
+      		<h3 class="demo-panel-title">Typography</h3>
+      	</div>
+      	<div class="demo-content">
+      		<div class="demo-type-example">
+	      		<h1><span class="demo-heading-note">Header 1</span>Showers across the W</h1>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h2><span class="demo-heading-note">Header 2</span>Give this quartet a few</h2>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h3><span class="demo-heading-note">Header 3</span>The Vatican transitions to a</h3>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h4><span class="demo-heading-note">Header 4</span>Great American Bites: Telluride's Oak, The</h4>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h5><span class="demo-heading-note">Header 5</span>Author Diane Alberts loves her some good</h5>
+      		</div>
+      		<div class="demo-type-example">
+	      		<h6><span class="demo-heading-note">Header 6</span>With the success of young-adult book-to-movie</h6>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Paragraph</span>
+	          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <strong>Donec ullamcorper</strong> nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Image</span>
+	          <img src="docs/assets/img/example-image.jpg" alt="example-image" class="img-rounded img-responsive">
+	          <p class="img-comment"><strong>Note:</strong> gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Lead Text</span>
+						<p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Quote</span>
+	          <blockquote>
+	            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+	            <small>Steve Jobs, CEO Apple</small>
+	          </blockquote>
+      		</div>
+      		<div class="demo-type-example">
+	      		<span class="demo-text-note">Small Font</span>
+	          <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small></p>
+      		</div>
+      	</div><!-- /.demo-content-wide -->
+      <!--</div><!-- /.demo-row -->
+
       <h3 class="demo-panel-title">Color Swatches</h3>
       <div class="row demo-swatches-row">
 	      <div class="swatches-col">
@@ -373,10 +446,10 @@
 
     </div> <!-- /container -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/video.js"></script>
-    <script src="js/flat-ui.min.js"></script>
-    <script src="js/application.js"></script>
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/vendor/video.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
 	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <script>
